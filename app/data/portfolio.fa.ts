@@ -88,48 +88,16 @@ export default {
 
   education: [
     {
-      institution: 'نام دانشگاه',
-      degree: 'کارشناسی',
-      field: 'علوم کامپیوتر',
-      location: 'تهران، ایران',
+      school: 'نام دانشگاه',
+      degree: 'کارشناسی علوم کامپیوتر',
       start: '۱۳۹۷',
       end: '۱۴۰۱',
-      gpa: '۳.۸/۴.۰',
-      description: 'تمرکز بر مهندسی نرم‌افزار و توسعه وب.',
+      icons: ['i-material-symbols-school'],
+      logo: null,
     },
   ],
 
-  skills: {
-    title: 'مهارت‌های فنی',
-    categories: [
-      {
-        name: 'فرانت‌اند',
-        skills: [
-          { name: 'Vue.js', level: 'expert', icon: 'i-logos-vue' },
-          { name: 'Nuxt.js', level: 'expert', icon: 'i-logos-nuxt-icon' },
-          { name: 'TypeScript', level: 'proficient', icon: 'i-logos-typescript-icon' },
-          { name: 'Tailwind CSS', level: 'expert', icon: 'i-logos-tailwindcss-icon' },
-          { name: 'HTML/CSS', level: 'expert', icon: 'i-logos-html-5' },
-        ],
-      },
-      {
-        name: 'بک‌اند',
-        skills: [
-          { name: 'Node.js', level: 'proficient', icon: 'i-logos-nodejs-icon' },
-          { name: 'Express', level: 'proficient', icon: 'i-logos-express' },
-          { name: 'REST APIs', level: 'proficient', icon: 'i-mdi-api' },
-        ],
-      },
-      {
-        name: 'ابزارها و سایر',
-        skills: [
-          { name: 'Git', level: 'expert', icon: 'i-mdi-git' },
-          { name: 'VS Code', level: 'expert', icon: 'i-logos-visual-studio-code' },
-          { name: 'Figma', level: 'familiar', icon: 'i-logos-figma' },
-        ],
-      },
-    ],
-  },
+
 
   projects: [
     {

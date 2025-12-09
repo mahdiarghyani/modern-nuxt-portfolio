@@ -1,6 +1,11 @@
 <template>
   <div>
-    <PortfolioHero />
+    <Hero />
+    <About />
+    <Skills />
+    <SoftSkills />
+    <WorkExperience />
+    <ProjectsList />
   </div>
 </template>
 

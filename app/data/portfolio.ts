@@ -87,63 +87,76 @@ export const portfolio: PortfolioData = {
   ],
 
   education: [
-    // TODO: Add education details
     {
-      institution: 'University Name',
-      degree: 'Bachelor of Science',
-      field: 'Computer Science',
-      location: 'Tehran, Iran',
+      school: 'University Name',
+      degree: 'Bachelor of Science in Computer Science',
       start: '2018',
       end: '2022',
-      gpa: '3.8/4.0',
-      description: 'Focused on software engineering and web development.',
+      icons: ['i-material-symbols-school'],
+      logo: null,
     },
   ],
 
-  skills: {
-    title: 'Technical Skills',
-    categories: [
-      {
-        name: 'Frontend',
-        skills: [
-          { name: 'Vue.js', level: 'expert', icon: 'i-logos-vue' },
-          { name: 'Nuxt.js', level: 'expert', icon: 'i-logos-nuxt-icon' },
-          { name: 'TypeScript', level: 'proficient', icon: 'i-logos-typescript-icon' },
-          { name: 'Tailwind CSS', level: 'expert', icon: 'i-logos-tailwindcss-icon' },
-          { name: 'HTML/CSS', level: 'expert', icon: 'i-logos-html-5' },
-        ],
-      },
-      {
-        name: 'Backend',
-        skills: [
-          { name: 'Node.js', level: 'proficient', icon: 'i-logos-nodejs-icon' },
-          { name: 'Express', level: 'proficient', icon: 'i-logos-express' },
-          { name: 'REST APIs', level: 'proficient', icon: 'i-mdi-api' },
-        ],
-      },
-      {
-        name: 'Tools & Others',
-        skills: [
-          { name: 'Git', level: 'expert', icon: 'i-mdi-git' },
-          { name: 'VS Code', level: 'expert', icon: 'i-logos-visual-studio-code' },
-          { name: 'Figma', level: 'familiar', icon: 'i-logos-figma' },
-        ],
-      },
-    ],
-  },
+
 
   projects: [
-    // TODO: Add projects
     {
-      id: 'modern-portfolio',
-      title: 'Modern Portfolio Website',
-      description: 'A modern, bilingual portfolio built with Nuxt 4 and Nuxt UI 4',
-      tags: ['Nuxt 4', 'Vue 3', 'TypeScript', 'Tailwind CSS', 'i18n'],
-      featured: true,
-      status: 'in-progress',
-      links: {
-        github: 'https://github.com/mahdiarghyani/modern-nuxt-portfolio',
-      },
+      name: 'vue-cursor-rules',
+      description:
+        'Contract-driven Cursor rules for Vue 3 + TypeScript with a focus on DX, a11y, security and production-ready outputs.',
+      links: [
+        {
+          label: 'GitHub',
+          to: 'https://github.com/aliarghyani/vue-cursor-rules',
+          icon: 'i-mdi-github',
+        },
+      ],
+      icons: ['i-logos-vue', 'i-logos-typescript-icon'],
+      status: 'Active',
+      opensource: true,
+    },
+    {
+      name: 'Ideh — Innovating Ideas Platform',
+      description: 'Dynamic, scalable platform for idea evaluation and market insights.',
+      thumbnail: '/img/projects/ideh.png',
+      status: 'Active',
+      opensource: false,
+      links: [{ label: 'Website', to: 'https://ideh.app/', icon: 'i-mdi-link' }],
+      icons: ['i-logos-nuxt-icon', 'i-logos-vue'],
+    },
+    {
+      name: 'Insho Advertising Marketplace',
+      description:
+        'Media marketplace that helps agencies and creators collaborate on high-impact advertising campaigns.',
+      thumbnail: '/img/projects/insho.png',
+      status: 'Active',
+      opensource: false,
+      links: [{ label: 'Website', to: 'https://insho.app/', icon: 'i-mdi-link' }],
+      icons: ['i-logos-nuxt-icon', 'i-logos-vue', 'i-logos-tailwindcss-icon'],
+    },
+    {
+      name: 'BaMashin Mobility Rentals',
+      description:
+        'Rental platform for booking cars, boats, helicopters, vans, bikes, and more across Iran.',
+      thumbnail: '/img/projects/bamashin.png',
+      status: 'Active',
+      opensource: false,
+      links: [{ label: 'Website', to: 'https://bamashin.net/', icon: 'i-mdi-link' }],
+      icons: ['i-logos-nuxt-icon', 'i-logos-vue'],
+    },
+    {
+      name: 'NuxtUi-Portfolio-Mahdi',
+      description: 'My portfolio built with Nuxt 4 and Nuxt UI v4, showcasing projects, skills, and experiences.',
+      status: 'Active',
+      opensource: true,
+      links: [
+        {
+          label: 'GitHub',
+          to: 'https://github.com/mahdiarghyani/modern-nuxt-portfolio',
+          icon: 'i-mdi-github',
+        },
+      ],
+      icons: ['i-logos-nuxt-icon', 'i-logos-vue', 'i-logos-typescript-icon', 'i-logos-tailwindcss-icon'],
     },
   ],
 }

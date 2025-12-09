@@ -26,7 +26,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
 import type { SkillType } from '@/types/portfolio.types'
 import { SKILL_TYPES } from '@/types/portfolio.types'
 
@@ -39,7 +38,7 @@ const TYPE_META: Record<SkillType, { icon: string; label: string }> = {
   Service: { icon: 'i-mdi-cloud-outline', label: 'Service' },
   DevOps: { icon: 'i-mdi-cogs', label: 'DevOps' },
   Testing: { icon: 'i-mdi-flask-outline', label: 'Testing' },
-  Data: { icon: 'i-mdi-database-outline', label: 'Data' }
+  Data: { icon: 'i-mdi-database-outline', label: 'Data' },
 }
 
 const meta = (type: SkillType) => TYPE_META[type]
@@ -63,7 +62,7 @@ const isSelected = (type: SkillType) => props.modelValue?.includes(type)
 const toggle = (type: SkillType) => {
   const current = props.modelValue ?? []
   if (current.includes(type)) {
-    emit('update:modelValue', current.filter(t => t !== type))
+    emit('update:modelValue', current.filter((t) => t !== type))
   } else {
     emit('update:modelValue', [...current, type])
   }
@@ -82,37 +81,31 @@ const handlePrimaryAction = () => {
   filtersOpen.value = !filtersOpen.value
 }
 
-watch(
-  hasSelection,
-  value => {
-    if (value) {
-      filtersOpen.value = true
-    }
+watch(hasSelection, (value) => {
+  if (value) {
+    filtersOpen.value = true
   }
-)
+})
 
 const filterButtonIcon = computed(() =>
-  hasSelection.value ? 'i-mdi-filter-remove' : 'i-mdi-filter-variant'
+  hasSelection.value ? 'i-mdi-filter-remove' : 'i-mdi-filter-variant',
 )
 const filterButtonLabel = computed(() =>
   hasSelection.value
     ? 'Clear skill filters'
     : filtersOpen.value
       ? 'Hide skill filters'
-      : 'Show skill filters'
+      : 'Show skill filters',
 )
 const filterButtonVariant = computed(() =>
-  hasSelection.value ? 'solid' : filtersOpen.value ? 'soft' : 'ghost'
+  hasSelection.value ? 'solid' : filtersOpen.value ? 'soft' : 'ghost',
 )
-const filterButtonColor = computed(() =>
-  hasSelection.value ? 'error' : 'neutral'
-)
-
+const filterButtonColor = computed(() => (hasSelection.value ? 'error' : 'neutral'))
 
 const transitionVars = (index: number, total: number) =>
   ({
     '--filter-index': `${index}`,
-    '--filter-order': `${Math.max(total - index, 0)}`
+    '--filter-order': `${Math.max(total - index, 0)}`,
   }) as Record<string, string>
 </script>
 
@@ -120,7 +113,10 @@ const transitionVars = (index: number, total: number) =>
 /* On small screens show a single horizontal row with scroll.
    On md+ the header already has enough space and this container is auto-sized. */
 .filter-toggle {
-  transition: transform 200ms ease, box-shadow 220ms ease, filter 220ms ease;
+  transition:
+    transform 200ms ease,
+    box-shadow 220ms ease,
+    filter 220ms ease;
 }
 
 .filter-toggle.has-selection {
@@ -134,7 +130,9 @@ const transitionVars = (index: number, total: number) =>
 
 .filter-panel-enter-active,
 .filter-panel-leave-active {
-  transition: opacity 200ms ease, transform 240ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition:
+    opacity 200ms ease,
+    transform 240ms cubic-bezier(0.34, 1.56, 0.64, 1);
   transform-origin: right center;
 }
 
@@ -146,7 +144,9 @@ const transitionVars = (index: number, total: number) =>
 
 .filter-chip-enter-active,
 .filter-chip-leave-active {
-  transition: opacity 200ms ease, transform 260ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition:
+    opacity 200ms ease,
+    transform 260ms cubic-bezier(0.34, 1.56, 0.64, 1);
   transform-origin: right center;
 }
 

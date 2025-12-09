@@ -1,12 +1,61 @@
 {
   "sections": {
+    "about": "About Me",
     "work": "Work Experience",
     "education": "Education",
-    "projects": "Projects",
+    "projects": " Projects",
     "blog": "Blog",
     "contact": "Contact",
     "skills": "Skills",
     "softSkills": "Values & Soft Skills"
+  },
+  "projectLabels": {
+    "openSource": "Open Source"
+  },
+  "skills": {
+    "expert": "Expert",
+    "proficient": "Proficient",
+    "usedBefore": "Used before",
+    "aiStack": "AI Stack",
+    "aiStackSubtitle": "IDEs, Protocols, Concepts, and Approaches that power my AI workflow"
+  },
+  "softSkills": {
+    "problemSolving": {
+      "label": "Problem solving",
+      "desc": "Approaches complex issues with pragmatic, thoughtful solutions."
+    },
+    "attentionToDetail": {
+      "label": "Attention to detail",
+      "desc": "Catches small issues early; delivers polished work."
+    },
+    "teamwork": {
+      "label": "Teamwork",
+      "desc": "Collaborative, reliable, and generous with knowledge sharing."
+    },
+    "teamLeadership": {
+      "label": "Team leadership",
+      "desc": "Aligns goals, unblocks teammates, fosters momentum."
+    },
+    "communication": {
+      "label": "Communication",
+      "desc": "Clear, concise updates and respectful listening."
+    },
+    "teamPerformance": {
+      "label": "Team performance",
+      "desc": "Improves processes and outcomes with actionable feedback."
+    },
+    "customerFocus": {
+      "label": "Customer focus",
+      "desc": "Owns outcomes; follows through to satisfaction."
+    },
+    "projectManagement": {
+      "label": "Project management",
+      "desc": "Plans, prioritizes, and ships on schedule."
+    },
+    "adaptability": {
+      "label": "Adaptability",
+      "desc": "Learns fast and adjusts smoothly to change."
+    }
   },
   "hero": {
     "currently": "Currently at",

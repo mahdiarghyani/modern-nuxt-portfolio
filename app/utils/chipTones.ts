@@ -6,7 +6,7 @@ export const chipTones = [
   'bg-rose-50 text-rose-700 ring-rose-200 dark:bg-rose-400/10 dark:text-rose-300 dark:ring-rose-500/30',
   'bg-amber-50 text-amber-800 ring-amber-200 dark:bg-amber-400/10 dark:text-amber-300 dark:ring-amber-500/30',
   'bg-cyan-50 text-cyan-700 ring-cyan-200 dark:bg-cyan-400/10 dark:text-cyan-300 dark:ring-cyan-500/30',
-  'bg-fuchsia-50 text-fuchsia-700 ring-fuchsia-200 dark:bg-fuchsia-400/10 dark:text-fuchsia-300 dark:ring-fuchsia-500/30'
+  'bg-fuchsia-50 text-fuchsia-700 ring-fuchsia-200 dark:bg-fuchsia-400/10 dark:text-fuchsia-300 dark:ring-fuchsia-500/30',
 ]
 
 export const neutralChipTone =

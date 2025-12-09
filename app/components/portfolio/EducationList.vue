@@ -3,7 +3,7 @@
     <UContainer>
       <div class="flex items-center gap-3 mb-3">
         <UIcon name="i-twemoji-graduation-cap" class="text-2xl" />
-        <h2 class="text-lg font-semibold text-start">{{ t('sections.education') }}</h2>
+        <h2 class="text-lg font-semibold text-start">{{ $t('sections.education') }}</h2>
       </div>
       <div class="space-y-4">
         <UCard v-for="(edu, i) in portfolio.education" :key="i"
@@ -32,7 +32,5 @@
 </template>
 
 <script setup lang="ts">
-import { usePortfolio } from '@/composables/usePortfolio'
 const portfolio = usePortfolio()
-const { t } = useI18n()
 </script>

@@ -3,7 +3,7 @@
     <UContainer>
       <div class="flex items-center gap-3 mb-4">
         <UIcon name="i-twemoji-brain" class="text-2xl" />
-        <h2 class="text-lg font-semibold">{{ t('sections.softSkills') }}</h2>
+        <h2 class="text-lg font-semibold">{{ $t('sections.softSkills') }}</h2>
       </div>
 
       <UCard>
@@ -52,11 +52,11 @@ const base: { key: SoftKey; icon: string }[] = [
 
 const { t } = useI18n()
 const resolved = computed(() =>
-  base.map(s => ({
+  base.map((s) => ({
     ...s,
     label: t(`softSkills.${s.key}.label`),
     description: t(`softSkills.${s.key}.desc`),
-  }))
+  })),
 )
 
 const chipClass = (i: number) => chipTones[i % chipTones.length]

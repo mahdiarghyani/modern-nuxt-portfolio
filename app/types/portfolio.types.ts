@@ -18,26 +18,41 @@ export interface Profile {
 }
 
 export interface Education {
-  institution: string
+  school: string
   degree: string
-  field: string
-  location: string
   start: string
   end: string
-  gpa?: string
-  description?: string
-  honors?: string[]
+  icons?: string[]
+  logo?: string | null
 }
 
-export interface Skill {
-  name: string
-  level: 'expert' | 'proficient' | 'familiar'
+export type SkillType =
+  | 'Language'
+  | 'Framework'
+  | 'Library'
+  | 'Tool'
+  | 'Service'
+  | 'DevOps'
+  | 'Testing'
+  | 'Data'
+
+export const SKILL_TYPES: readonly SkillType[] = [
+  'Language',
+  'Framework',
+  'Library',
+  'Tool',
+  'Service',
+  'DevOps',
+  'Testing',
+  'Data',
+] as const
+
+export type Tag = {
+  label: string
   icon?: string
-}
-
-export interface SkillCategory {
-  name: string
-  skills: Skill[]
+  description?: string
+  to?: string
+  type?: SkillType
 }
 
 export interface IconItem {
@@ -51,20 +66,18 @@ export interface ValueItem extends IconItem {
 }
 
 export interface Project {
-  id: string
-  title: string
+  name: string
   description: string
-  image?: string
-  tags: string[]
-  links?: {
-    github?: string
-    demo?: string
-    website?: string
-  }
-  featured?: boolean
-  startDate?: string
-  endDate?: string
-  status?: 'completed' | 'in-progress' | 'archived'
+  thumbnail?: string
+  status?: string
+  opensource?: boolean
+  links?: Array<{
+    label: string
+    to: string
+    icon?: string
+  }>
+  icons?: string[]
+  category?: 'current' | 'freelance' | 'public'
 }
 
 export interface Position {
@@ -103,9 +116,5 @@ export interface PortfolioData {
   }
   experiences: WorkExperience[]
   education: Education[]
-  skills: {
-    title: string
-    categories: SkillCategory[]
-  }
   projects: Project[]
 }
