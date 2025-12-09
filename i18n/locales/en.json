@@ -1,0 +1,56 @@
+{
+  "sections": {
+    "work": "Work Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact",
+    "skills": "Skills",
+    "softSkills": "Values & Soft Skills"
+  },
+  "hero": {
+    "currently": "Currently at",
+    "viewResume": "View Resume",
+    "downloadPdf": "Download PDF"
+  },
+  "buttons": {
+    "blog": "Blog Posts",
+    "contact": "Contact",
+    "website": "Website",
+    "switchToEnglish": "English",
+    "switchToPersian": "فارسی"
+  },
+  "nav": {
+    "home": "Home",
+    "skills": "Skills",
+    "blog": "Blog",
+    "contact": "Contact",
+    "theme": "Theme"
+  },
+  "blog": {
+    "title": "Blog",
+    "explore": "Stories & notes",
+    "empty": "No posts yet. Check back soon!",
+    "readMore": "Read article",
+    "backToBlog": "Back to Blog"
+  },
+  "common": {
+    "present": "Present",
+    "backToHome": "Back to Home",
+    "goBack": "Go Back"
+  },
+  "error": {
+    "notFoundTitle": "Page Not Found",
+    "notFoundMessage": "The page you're looking for doesn't exist or has been moved.",
+    "forbiddenTitle": "Access Denied",
+    "forbiddenMessage": "You don't have permission to access this resource.",
+    "serverErrorTitle": "Server Error",
+    "serverErrorMessage": "Something went wrong on our end. Please try again later.",
+    "defaultTitle": "Oops! Something Went Wrong",
+    "defaultMessage": "An unexpected error occurred. Please try again.",
+    "helpTitle": "Need Help?",
+    "suggestion1": "Check the URL for typos",
+    "suggestion2": "Use the navigation menu to find what you're looking for",
+    "suggestion3": "Return to the homepage and start fresh"
+  }
+}

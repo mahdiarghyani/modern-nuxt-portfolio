@@ -1,0 +1,56 @@
+{
+  "sections": {
+    "work": "سوابق کاری",
+    "education": "تحصیلات",
+    "projects": "پروژه‌ها",
+    "blog": "وبلاگ",
+    "contact": "ارتباط",
+    "skills": "مهارت‌ها",
+    "softSkills": "ارزش‌ها و مهارت‌های نرم"
+  },
+  "hero": {
+    "currently": "در حال حاضر در",
+    "viewResume": "مشاهده رزومه",
+    "downloadPdf": "دانلود PDF"
+  },
+  "buttons": {
+    "blog": "مقالات",
+    "contact": "ارتباط",
+    "website": "وب‌سایت",
+    "switchToEnglish": "English",
+    "switchToPersian": "فارسی"
+  },
+  "nav": {
+    "home": "خانه",
+    "skills": "مهارت‌ها",
+    "blog": "وبلاگ",
+    "contact": "ارتباط",
+    "theme": "تم"
+  },
+  "blog": {
+    "title": "وبلاگ",
+    "explore": "داستان‌ها و یادداشت‌ها",
+    "empty": "فعلاً نوشته‌ای وجود ندارد.",
+    "readMore": "مطالعه",
+    "backToBlog": "بازگشت به وبلاگ"
+  },
+  "common": {
+    "present": "اکنون",
+    "backToHome": "بازگشت به خانه",
+    "goBack": "بازگشت"
+  },
+  "error": {
+    "notFoundTitle": "صفحه یافت نشد",
+    "notFoundMessage": "صفحه‌ای که به دنبال آن هستید وجود ندارد یا منتقل شده است.",
+    "forbiddenTitle": "دسترسی رد شد",
+    "forbiddenMessage": "شما اجازه دسترسی به این منبع را ندارید.",
+    "serverErrorTitle": "خطای سرور",
+    "serverErrorMessage": "مشکلی از سمت ما پیش آمده است. لطفاً بعداً دوباره تلاش کنید.",
+    "defaultTitle": "اوه! مشکلی پیش آمد",
+    "defaultMessage": "یک خطای غیرمنتظره رخ داد. لطفاً دوباره تلاش کنید.",
+    "helpTitle": "نیاز به کمک دارید؟",
+    "suggestion1": "آدرس URL را برای اشتباه تایپی بررسی کنید",
+    "suggestion2": "از منوی ناوبری برای یافتن آنچه می‌خواهید استفاده کنید",
+    "suggestion3": "به صفحه اصلی بازگردید و از نو شروع کنید"
+  }
+}

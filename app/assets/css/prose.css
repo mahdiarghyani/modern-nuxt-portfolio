@@ -1,0 +1,82 @@
+/* Enhanced Prose Styles for Blog Content */
+
+.prose {
+  color: rgb(55, 65, 81);
+  max-width: 65ch;
+  font-size: 1.125rem;
+  line-height: 2;
+}
+
+.dark .prose {
+  color: rgb(229, 231, 235);
+}
+
+.prose[dir="rtl"] {
+  line-height: 2.1;
+  letter-spacing: 0.02em;
+}
+
+.prose :where(h1):not(:where([class~="not-prose"] *)) {
+  color: rgb(17, 24, 39);
+  font-weight: 800;
+  font-size: 2.25em;
+  margin-top: 0;
+  margin-bottom: 0.8888889em;
+  line-height: 1.1111111;
+}
+
+.dark .prose :where(h1):not(:where([class~="not-prose"] *)) {
+  color: rgb(243, 244, 246);
+}
+
+.prose :where(h2):not(:where([class~="not-prose"] *)) {
+  color: rgb(17, 24, 39);
+  font-weight: 700;
+  font-size: 1.875em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.3333333;
+}
+
+.dark .prose :where(h2):not(:where([class~="not-prose"] *)) {
+  color: rgb(243, 244, 246);
+}
+
+.prose :where(a):not(:where([class~="not-prose"] *)) {
+  color: rgb(99, 102, 241);
+  text-decoration: underline;
+  text-decoration-color: rgba(99, 102, 241, 0.3);
+  text-underline-offset: 0.25em;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.prose :where(a):not(:where([class~="not-prose"] *)):hover {
+  color: rgb(79, 70, 229);
+  text-decoration-color: rgba(99, 102, 241, 0.8);
+}
+
+.dark .prose :where(a):not(:where([class~="not-prose"] *)) {
+  color: rgb(129, 140, 248);
+}
+
+.prose :where(code):not(:where([class~="not-prose"], pre *)) {
+  color: rgb(17, 24, 39);
+  font-weight: 600;
+  font-size: 0.875em;
+  background-color: rgba(99, 102, 241, 0.1);
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.dark .prose :where(code):not(:where([class~="not-prose"], pre *)) {
+  color: rgb(243, 244, 246);
+  background-color: rgba(99, 102, 241, 0.2);
+}
+
+@media (max-width: 640px) {
+  .prose {
+    font-size: 1rem;
+  }
+}

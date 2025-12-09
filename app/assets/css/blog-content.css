@@ -1,0 +1,70 @@
+/* Blog Content Styles - Optimized for Persian/RTL */
+
+.blog-content {
+  font-size: 1.125rem;
+  line-height: 2;
+  letter-spacing: 0.01em;
+  color: rgb(55, 65, 81);
+  max-width: 75ch;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.dark .blog-content {
+  color: rgb(229, 231, 235);
+}
+
+.blog-content-rtl {
+  line-height: 2.2 !important;
+  letter-spacing: 0.02em !important;
+}
+
+.blog-content-rtl pre,
+.blog-content-rtl code {
+  direction: ltr;
+  text-align: left;
+}
+
+.blog-content h1 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+  font-weight: 700;
+  font-size: 2.25em;
+  color: rgb(17, 24, 39);
+}
+
+.dark .blog-content h1 {
+  color: rgb(243, 244, 246);
+}
+
+.blog-content p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: inherit;
+}
+
+.blog-content a {
+  color: rgb(99, 102, 241);
+  text-decoration: underline;
+  text-decoration-color: rgba(99, 102, 241, 0.3);
+  text-underline-offset: 0.25em;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.blog-content a:hover {
+  color: rgb(79, 70, 229);
+  text-decoration-color: rgba(99, 102, 241, 0.8);
+}
+
+.dark .blog-content a {
+  color: rgb(129, 140, 248);
+}
+
+@media (max-width: 640px) {
+  .blog-content {
+    font-size: 1rem;
+  }
+}
