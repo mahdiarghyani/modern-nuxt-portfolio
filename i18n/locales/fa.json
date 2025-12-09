@@ -17,6 +17,7 @@
     "blog": "مقالات",
     "contact": "ارتباط",
     "website": "وب‌سایت",
+    "viewProjects": "مشاهده پروژه‌ها",
     "switchToEnglish": "English",
     "switchToPersian": "فارسی"
   },
@@ -38,6 +39,9 @@
     "present": "اکنون",
     "backToHome": "بازگشت به خانه",
     "goBack": "بازگشت"
+  },
+  "meta": {
+    "portfolioTitleSuffix": "مهدی ارغیانی - توسعه‌دهنده فول‌استک"
   },
   "error": {
     "notFoundTitle": "صفحه یافت نشد",

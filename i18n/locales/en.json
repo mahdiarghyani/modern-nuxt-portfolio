@@ -17,6 +17,7 @@
     "blog": "Blog Posts",
     "contact": "Contact",
     "website": "Website",
+    "viewProjects": "View Projects",
     "switchToEnglish": "English",
     "switchToPersian": "فارسی"
   },
@@ -38,6 +39,9 @@
     "present": "Present",
     "backToHome": "Back to Home",
     "goBack": "Go Back"
+  },
+  "meta": {
+    "portfolioTitleSuffix": "Mahdi Arghyani - Full-stack Developer"
   },
   "error": {
     "notFoundTitle": "Page Not Found",
