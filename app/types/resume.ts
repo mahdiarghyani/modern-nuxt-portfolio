@@ -1,82 +1,80 @@
-/**
- * Resume TypeScript Interfaces
- * Based on JSON Resume schema (modified)
- * @see https://jsonresume.org/schema/
- */
-
-export interface ResumeBasics {
+export interface ResumeProfile {
   name: string
-  label: string // Job title
+  title: string
   email: string
-  phone: string
-  url?: string
-  image?: string // Profile photo URL
-  location: {
-    city: string
-    country: string
-  }
-  profiles: Array<{
-    network: string // LinkedIn, GitHub, etc.
-    url: string
-    icon?: string // Iconify icon name
-  }>
+  phone?: string
+  location: string
+  linkedin?: string
+  github?: string
+  website?: string
   summary: string
 }
 
-export interface WorkExperience {
+export interface ResumeEducation {
+  degree: string
+  field: string
+  institution: string
+  location: string
+  startDate: string
+  endDate: string
+  gpa?: string
+  honors?: string[]
+}
+
+export interface ResumeWorkExperience {
   company: string
   position: string
-  location?: string // City, Country or Remote
-  startDate: string // YYYY-MM format
-  endDate?: string // YYYY-MM or undefined for "Present"
-  highlights: string[] // Bullet points
+  location: string
+  startDate: string
+  endDate: string | 'Present'
+  achievements: string[]
+  technologies?: string[]
 }
 
-export interface Education {
-  institution: string
-  area: string // Field of study
-  studyType: string // Degree type
-  startDate: string // YYYY-MM format
-  endDate?: string // YYYY-MM format
-  courses?: string[] // Relevant coursework
+export interface ResumeProject {
+  title: string
+  description: string
+  technologies: string[]
+  link?: string
+  highlights: string[]
 }
 
-export interface Skill {
-  name: string // Category name
-  keywords: string[] // Individual skills
+export interface ResumeSkillCategory {
+  category: string
+  skills: string[]
 }
 
-export interface Language {
-  language: string
-  fluency: string // Native, Fluent, Intermediate, Basic, or custom (e.g., "Fluent (Duolingo 85/100)")
-}
-
-export interface Certification {
+export interface ResumeCertification {
   name: string
   issuer: string
-  date: string // YYYY or YYYY-MM format
-  url?: string // Certificate URL
-  summary?: string // Additional details (e.g., score)
+  date: string
+  link?: string
 }
 
-export interface Project {
-  name: string
-  description: string
-  highlights?: string[]
-  keywords?: string[]
-  startDate?: string
-  endDate?: string
-  url?: string
-  roles?: string[]
-  type?: string
+export interface ResumeLanguage {
+  language: string
+  proficiency: string
+  certification?: string
 }
 
 export interface Resume {
-  basics: ResumeBasics
-  work: WorkExperience[]
-  education: Education[]
-  skills: Skill[]
-  languages?: Language[]
-  certificates?: Certification[]
-  projects?: Project[]
+  profile: ResumeProfile
+  education: ResumeEducation[]
+  workExperience: ResumeWorkExperience[]
+  projects: ResumeProject[]
+  skills: ResumeSkillCategory[]
+  certifications?: ResumeCertification[]
+  languages?: ResumeLanguage[]
+}
+
+export interface ResumePdfOptions {
+  format?: 'A4' | 'Letter'
+  margin?: {
+    top?: string
+    right?: string
+    bottom?: string
+    left?: string
+  }
+  printBackground?: boolean
+  preferCSSPageSize?: boolean
 }

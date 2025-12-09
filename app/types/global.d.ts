@@ -1,4 +1,17 @@
-declare type Optional<T> = T | undefined // sugar
+declare module '#app' {
+  interface PageMeta {
+    layout?: string
+    middleware?: string | string[]
+    title?: string
+    description?: string
+  }
+}
 
-// https://stackoverflow.com/a/75926487/2255491
-declare function useNuxtApp(): NuxtApp
+declare module 'nuxt/schema' {
+  interface PublicRuntimeConfig {
+    siteUrl: string
+    loadPlausible: string
+  }
+}
+
+export {}

@@ -1,24 +1,35 @@
 export interface BlogPost {
-  // Required fields
+  _path: string
   title: string
   description: string
-  date: string // ISO 8601 format
+  date: string
+  updatedAt?: string
   tags: string[]
-  path: string // Nuxt Content v3 uses 'path' instead of '_path'
-
-  // Optional fields
-  image?: string // Cover image path
+  image?: string
   author?: string
   draft?: boolean
-  updatedAt?: string
-
-  // Custom SEO
-  head?: {
-    title?: string
-    description?: string
-    image?: string
-  }
-
-  // Body with TOC (MarkdownRoot from Nuxt Content)
+  readingTime?: string
   body?: any
+}
+
+export interface BlogListItem {
+  _path: string
+  title: string
+  description: string
+  date: string
+  tags: string[]
+  image?: string
+  readingTime?: string
+}
+
+export interface BlogCategory {
+  name: string
+  slug: string
+  count: number
+}
+
+export interface BlogTag {
+  name: string
+  slug: string
+  count: number
 }

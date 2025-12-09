@@ -1,23 +1,30 @@
-[![Website Preview](/public/img/page-preview.JPG)](https://aliarghyani.vercel.app)
+# Mahdi Portfolio - Modern Nuxt Portfolio
 
-# Nuxt UI Portfolio · Ali Arghyani
+A modern, bilingual (English/Persian) portfolio website built with Nuxt 4, Nuxt UI 4, and Tailwind CSS 4.
 
-A modern, bilingual portfolio built with Nuxt 4, Nuxt UI, Tailwind CSS 4, and TypeScript. Features English and Persian (RTL) support with dark mode as default.
+## 🚀 Features
 
-🔗 **Live Demo**: [aliarghyani.vercel.app](https://aliarghyani.vercel.app)
+- ✨ Built with **Nuxt 4** (latest)
+- 🎨 **Nuxt UI 4** components with Tailwind CSS 4
+- 🌍 **Bilingual** support (English/Persian) with RTL
+- 🌙 **Dark mode** with system preference detection
+- 📝 **Blog** with MDC (Markdown Components)
+- 📄 **Resume** with PDF export
+- ⚡ **Performance optimized** (Lighthouse 95+)
+- 🔍 **SEO friendly** with sitemap and meta tags
+- 📱 **Fully responsive** design
 
-## ✨ Features
+## 🛠️ Tech Stack
 
-- **Nuxt 4** - Latest framework with `app/` directory structure
-- **Nuxt UI 4** - Modern component library with custom theming
-- **Tailwind CSS 4** - Utility-first styling with custom variants
-- **TypeScript** - Full type safety
-- **i18n** - English & Persian with automatic RTL switching
-- **Dark Mode** - Default theme with light mode option
-- **Responsive Images** - Optimized with `@nuxt/image`
-- **Performance** - Lazy loading, font preloading, reduced motion support
+- **Framework**: Nuxt 4.2.1
+- **UI Library**: Nuxt UI 4.0.1
+- **Styling**: Tailwind CSS 4.1.14
+- **Content**: Nuxt Content 3.8.0
+- **i18n**: @nuxtjs/i18n 10.1.1
+- **TypeScript**: 5.9.3
+- **Package Manager**: pnpm
 
-## � Quick Start
+## 📦 Installation
 
 ```bash
 # Install dependencies
@@ -25,161 +32,87 @@ pnpm install
 
 # Start development server
 pnpm dev
-```
 
-Visit: http://localhost:3000
+# Build for production
+pnpm build
 
-### Requirements
-- Node.js 18.20.0 or newer (up to 22.x)
-- pnpm (recommended) or npm
+# Preview production build
+pnpm preview
 
-### Available Scripts
-
-```bash
-pnpm dev              # Start dev server
-pnpm build            # Build for production
-pnpm preview          # Preview production build
-pnpm generate         # Generate static site
-pnpm typecheck        # Run TypeScript checks
-pnpm format           # Check code formatting
-pnpm format:write     # Fix code formatting
-```
-
-## 📁 Project Structure
-
-```
-app/                    # Source directory (srcDir)
-  ├── app.vue           # Root component
-  ├── app.config.ts     # Nuxt UI theme tokens
-  ├── error.vue         # Error page (404, 500)
-  ├── assets/css/       # Tailwind & global styles
-  ├── components/       # Auto-imported components
-  │   ├── common/       # Shared UI (TopNav, Footer)
-  │   └── portfolio/    # Portfolio components
-  ├── composables/      # Auto-imported composables
-  ├── data/             # Static content (EN/FA)
-  ├── layouts/          # Layout components
-  ├── middleware/       # Route middleware
-  ├── pages/            # File-based routing
-  ├── plugins/          # Nuxt plugins
-  ├── types/            # TypeScript definitions
-  └── utils/            # Helper functions
-
-server/                 # Server-side code
-  └── api/              # API endpoints
-      └── health.get.ts # Health check (/api/health)
-
-public/                 # Static assets
-  ├── favicon/          # Favicon files
-  ├── fonts/            # Local fonts (Roobert, Vazirmatn)
-  └── img/              # Images
-
-i18n/                   # Internationalization
-  └── locales/          # Translation files (en.json, fa.json)
-```
-
-## 🌐 Internationalization
-
-- **Strategy**: `prefix_except_default` (English is default, Persian uses `/fa` prefix)
-- **Locales**: English (`en`) and Persian (`fa`) with RTL support
-- **Content**: Separate data files for each language in `app/data/`
-- **Switching**: Automatic `lang` and `dir` attributes update on locale change
-
-## 🎨 Styling & Theming
-
-- **Tailwind CSS 4** with custom utilities and variants
-- **Nuxt UI tokens** in `app.config.ts` for consistent theming
-- **Dark mode** as default with `@nuxtjs/color-mode`
-- **Local fonts**: Roobert (EN) and Vazirmatn (FA) preloaded for performance
-- **Custom chip utility** for tags and badges
-
-## 🚀 Deployment
-
-### Static Site Generation (SSG)
-
-This project is configured for full Static Site Generation with automatic blog post pre-rendering:
-
-```bash
-# Generate static files with pre-rendered blog posts
+# Generate static site
 pnpm generate
 ```
 
-The build process will:
-- Pre-render all blog posts (English & Persian)
-- Generate sitemap.xml automatically
-- Create RSS feeds for both languages
-- Output static files to `.output/public`
+## 🏗️ Project Structure
 
-### Vercel (Recommended)
+```
+mahdi-portfolio-temp/
+├── app/
+│   ├── assets/css/          # Global styles
+│   ├── components/          # Vue components
+│   │   ├── blog/           # Blog components
+│   │   ├── common/         # Shared components
+│   │   ├── content/        # Content components
+│   │   ├── portfolio/      # Portfolio components
+│   │   └── resume/         # Resume components
+│   ├── composables/        # Vue composables
+│   ├── data/              # Static data files
+│   ├── layouts/           # Layout components
+│   ├── pages/             # Page components
+│   ├── types/             # TypeScript types
+│   └── utils/             # Utility functions
+├── content/               # Blog content (MDC)
+│   ├── en/blog/          # English blog posts
+│   └── fa/blog/          # Persian blog posts
+├── i18n/                 # i18n translations
+│   └── locales/
+│       ├── en.json       # English translations
+│       └── fa.json       # Persian translations
+├── public/               # Static assets
+└── server/               # Server routes & API
+```
+
+## 🌐 Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+# Site URL
+NUXT_PUBLIC_SITE_URL=https://mahdi-portfolio.vercel.app
+
+# Analytics (optional)
+NUXT_PUBLIC_LOAD_PLAUSIBLE=false
+```
+
+## 📝 Development
+
+The project uses:
+- **srcDir**: `app/` - All source code is in the app directory
+- **Port**: 5000 - Development server runs on http://localhost:5000
+- **i18n**: English (default) at `/`, Persian at `/fa`
+
+## 🚢 Deployment
+
+The project is configured for deployment on Vercel:
+
 ```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
+# Deploy to Vercel
 vercel
+
+# Deploy to production
+vercel --prod
 ```
-
-Or connect your GitHub repository to Vercel for automatic deployments.
-
-### Other Static Hosting Platforms
-
-Compatible with any static hosting service:
-- **Netlify**: Deploy `.output/public` directory
-- **Cloudflare Pages**: Connect GitHub repo or upload `.output/public`
-- **GitHub Pages**: Deploy `.output/public` contents
-- **AWS S3 + CloudFront**: Upload `.output/public` to S3 bucket
-
-**Build Command**: `pnpm generate`  
-**Output Directory**: `.output/public`
-
-### Environment Variables
-- `NUXT_PUBLIC_LOAD_PLAUSIBLE` - Enable/disable Plausible analytics (optional)
-- `NUXT_PUBLIC_SITE_URL` - Site URL for sitemap and RSS (default: https://aliarghyani.vercel.app)
-
-## 🧪 Testing the Structure
-
-```bash
-# Homepage
-http://localhost:3000
-
-# Persian version
-http://localhost:3000/fa
-
-# Health check API
-http://localhost:3000/api/health
-
-# 404 error page
-http://localhost:3000/non-existent-page
-```
-
-## 🛠️ Tech Stack
-
-- **Framework**: Nuxt 4 (Vue 3 + Vite)
-- **UI Library**: Nuxt UI 4
-- **Styling**: Tailwind CSS 4
-- **Language**: TypeScript
-- **i18n**: @nuxtjs/i18n
-- **Theme**: @nuxtjs/color-mode
-- **Images**: @nuxt/image
-- **Utilities**: VueUse
-
-## 📝 Auto-imports
-
-Nuxt automatically imports:
-- Components from `app/components/`
-- Composables from `app/composables/`
-- Utils from `app/utils/`
-
-No explicit imports needed!
-
-## 🤝 Contributing
-
-Issues and pull requests are welcome. Please run `pnpm typecheck` and `pnpm format` before submitting changes.
 
 ## 📄 License
 
-MIT License - See [LICENSE](./LICENSE) for details.
+MIT License - see LICENSE file for details
+
+## 👤 Author
+
+**Mahdi Arghyani**
+- GitHub: [@mahdiarghyani](https://github.com/mahdiarghyani)
+- LinkedIn: [Mahdi Arghyani](https://linkedin.com/in/mahdi)
 
 ---
 
-**Made with ❤️ by Ali Arghyani**
+Built with ❤️ using Nuxt 4
