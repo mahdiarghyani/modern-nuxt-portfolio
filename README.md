@@ -78,7 +78,7 @@ Create a `.env` file in the root directory:
 
 ```env
 # Site URL
-NUXT_PUBLIC_SITE_URL=https://mahdi-portfolio.vercel.app
+NUXT_PUBLIC_SITE_URL=https://mahdiarghyani.vercel.app
 
 # Analytics (optional)
 NUXT_PUBLIC_LOAD_PLAUSIBLE=false

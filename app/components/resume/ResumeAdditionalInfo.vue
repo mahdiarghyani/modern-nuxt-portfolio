@@ -12,7 +12,7 @@ const props = defineProps<Props>()
   <section class="mb-12 print:mb-12">
     <h2
       class="text-base font-bold text-blue-700 uppercase border-b-2 border-blue-600 pb-2 mb-6 print:mb-6 tracking-wide">
-      Skills & Qualifications
+      {{ $t('resume.skillsQualifications') }}
     </h2>
 
     <!-- Technical Skills (categorized) -->

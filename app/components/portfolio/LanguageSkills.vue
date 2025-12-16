@@ -1,9 +1,9 @@
 <template>
-  <section class="py-6">
+  <section class="section-spacing">
     <UContainer>
-      <div class="flex items-center gap-3 mb-4">
+      <div class="section-header flex-nowrap items-center gap-3 justify-start">
         <UIcon name="i-twemoji-globe-showing-europe-africa" class="text-2xl" />
-        <h2 class="text-lg font-semibold">{{ t('sections.language') }}</h2>
+        <h2 class="section-title">{{ t('sections.language') }}</h2>
       </div>
 
       <UCard>
@@ -12,16 +12,8 @@
             <p class="text-sm text-gray-600 dark:text-gray-300 max-w-3xl">
               {{ t('languageSection.tagline') }}
             </p>
-            <UBadge
-              size="lg"
-              color="primary"
-              variant="soft"
-              class="inline-flex items-center gap-2"
-            >
-              <UIcon
-                name="simple-icons:duolingo"
-                class="text-xl text-[#58CC02] dark:text-[#58CC02]"
-              />
+            <UBadge size="lg" color="primary" variant="soft" class="inline-flex items-center gap-2">
+              <UIcon name="simple-icons:duolingo" class="text-xl text-[#58CC02] dark:text-[#58CC02]" />
               <span>
                 {{ t('languageSection.duolingo.label') }}: {{ t('languageSection.duolingo.value') }}
               </span>
@@ -35,17 +27,8 @@
               class="flex flex-col gap-2 rounded-lg border border-slate-200/80 p-3 dark:border-slate-700/60"
             >
               <div class="flex items-center gap-2">
-                <img
-                  v-if="item.iconType === 'image'"
-                  :src="item.icon"
-                  :alt="item.title"
-                  class="h-6 w-6 object-contain"
-                />
-                <UIcon
-                  v-else
-                  :name="item.icon"
-                  class="text-lg text-primary-500 dark:text-primary-400"
-                />
+                <img v-if="item.iconType === 'image'" :src="item.icon" :alt="item.title" class="h-6 w-6 object-contain" />
+                <UIcon v-else :name="item.icon" class="text-lg text-primary-500 dark:text-primary-400" />
                 <h3 class="text-sm font-semibold text-gray-900 dark:text-gray-100">
                   {{ item.title }}
                 </h3>

@@ -32,6 +32,9 @@ export const expert: Tag[] = [
     to: 'https://tailwindcss.com',
     type: 'Framework',
   },
+  { label: 'Vuetify', icon: 'i-logos-vuetifyjs', to: 'https://vuetifyjs.com', type: 'Library' },
+  { label: 'Nuxt UI', icon: 'i-logos-nuxt-icon', to: 'https://ui.nuxt.com', type: 'Library' },
+  { label: 'Pinia', icon: 'i-logos-pinia', to: 'https://pinia.vuejs.org', type: 'Library' },
   { label: 'Git', icon: 'i-logos-git-icon', to: 'https://git-scm.com', type: 'DevOps' },
   {
     label: 'GitHub',
@@ -39,14 +42,15 @@ export const expert: Tag[] = [
     to: 'https://github.com',
     type: 'Service',
   },
-  { label: 'ESLint', icon: 'i-logos-eslint', to: 'https://eslint.org', type: 'Tool' },
   { label: 'Prettier', icon: 'i-logos-prettier', to: 'https://prettier.io', type: 'Tool' },
   { label: 'Vite', icon: 'i-logos-vitejs', to: 'https://vitejs.dev', type: 'Tool' },
 ]
 
 export const proficient: Tag[] = [
   { label: 'Nuxt.js', icon: 'i-logos-nuxt-icon', to: 'https://nuxt.com', type: 'Framework' },
-  { label: 'Node.js', icon: 'i-logos-nodejs-icon', to: 'https://nodejs.org', type: 'Framework' },
+  { label: 'ESLint', icon: 'i-logos-eslint', to: 'https://eslint.org', type: 'Tool' },
+  { label: 'Axios', icon: 'simple-icons:axios', to: 'https://axios-http.com', type: 'Library' },
+  { label: 'vue-i18n', icon: 'i-twemoji-globe-with-meridians', to: 'https://vue-i18n.intlify.dev', type: 'Library' },
   {
     label: 'Postman',
     icon: 'logos:postman-icon',
@@ -61,18 +65,6 @@ export const proficient: Tag[] = [
     to: 'https://getbootstrap.com',
     type: 'Framework',
   },
-  {
-    label: 'Cypress',
-    icon: 'logos:cypress-icon',
-    to: 'https://www.cypress.io',
-    type: 'Testing',
-  },
-  {
-    label: 'ECharts',
-    icon: 'simple-icons:apacheecharts',
-    to: 'https://echarts.apache.org',
-    type: 'Library',
-  },
 ]
 
 export const usedBefore: Tag[] = [
@@ -80,12 +72,6 @@ export const usedBefore: Tag[] = [
   { label: 'LESS', icon: 'i-logos-less', to: 'https://lesscss.org', type: 'Language' },
   { label: 'Python', icon: 'i-logos-python', to: 'https://www.python.org', type: 'Language' },
   { label: 'NumPy', icon: 'i-logos-numpy', to: 'https://numpy.org', type: 'Data' },
-  {
-    label: 'Pandas',
-    icon: 'logos:pandas-icon',
-    to: 'https://pandas.pydata.org',
-    type: 'Data',
-  },
   { label: 'Linux', icon: 'i-logos-linux-tux', to: 'https://www.kernel.org', type: 'DevOps' },
   {
     label: 'Iconify',
@@ -100,12 +86,6 @@ export const usedBefore: Tag[] = [
     type: 'Service',
   },
   { label: 'GitLab', icon: 'logos:gitlab-icon', to: 'https://gitlab.com', type: 'DevOps' },
-  {
-    label: 'Playwright',
-    icon: 'i-logos-playwright',
-    to: 'https://playwright.dev',
-    type: 'Testing',
-  },
 ]
 
 export const aiStack: Tag[] = [
@@ -117,9 +97,11 @@ export const aiStack: Tag[] = [
   { label: 'VSCode', icon: 'i-logos-visual-studio-code' },
   { label: 'Kiro', icon: 'i-twemoji-brain' },
   { label: 'Cursor', icon: 'i-twemoji-lightning-bolt' },
+  { label: 'GitHub Copilot', icon: 'i-mdi-github' },
+  { label: 'Codex', icon: 'i-mdi-code-braces' },
   { label: 'RooCode', icon: 'i-twemoji-kangaroo' },
   { label: 'Qoder', icon: 'i-twemoji-rocket' },
-  { label: 'MCP (Machine Collaboration Protocol)', icon: 'i-twemoji-link' },
+  { label: 'MCP (Model Context Protocol)', icon: 'i-twemoji-link' },
   { label: 'Context7 MCP', icon: 'i-twemoji-file-folder' },
   { label: 'Playwright MCP', icon: 'i-twemoji-performing-arts' },
   { label: 'Chrome DevTools MCP', icon: 'i-twemoji-magnifying-glass-tilted-left' },

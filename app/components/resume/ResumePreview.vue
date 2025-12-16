@@ -50,6 +50,7 @@ const { resume } = useResumeData()
   display: flex;
   flex-direction: column;
   padding: 2rem !important;
+  padding-top: 3.5rem !important;
 }
 
 @media print {

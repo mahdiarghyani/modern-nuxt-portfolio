@@ -1,6 +1,6 @@
 <template>
   <div
-    class="ms-auto w-full md:w-auto flex flex-row-reverse items-center gap-1 overflow-x-auto no-scrollbar whitespace-nowrap px-1 py-1"
+    class="ms-auto flex flex-row-reverse items-center gap-1 overflow-x-auto no-scrollbar whitespace-nowrap px-1 py-1 min-w-0"
     role="toolbar" aria-label="Skill filters">
     <UButton :icon="filterButtonIcon" size="xs" :variant="filterButtonVariant" :color="filterButtonColor"
       class="filter-toggle rounded-full shrink-0 mx-1"

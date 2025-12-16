@@ -4,6 +4,7 @@ export interface Profile {
   avatar: string | null
   location: string
   summary: string
+  bio?: string
   socials: {
     email?: string
     github?: string
@@ -13,6 +14,9 @@ export interface Profile {
     telegram?: string
     whatsapp?: string
     instagram?: string
+    x?: string
+    spotify?: string
+    bento?: string
     [key: string]: string | undefined
   }
 }
@@ -80,6 +84,23 @@ export interface Project {
   category?: 'current' | 'freelance' | 'public'
 }
 
+// Backward-compatible single-position experience
+export interface Experience {
+  company: string
+  role: string
+  start: string
+  end?: string
+  ongoing?: boolean
+  description: string[]
+  icons?: string[]
+  location?: string
+  type?: string
+  link?: string
+  linkLabel?: string
+  logo?: string
+}
+
+// Position inside a company timeline (LinkedIn-style)
 export interface Position {
   title: string
   start: string
@@ -87,18 +108,25 @@ export interface Position {
   ongoing?: boolean
   description: string[]
   icons?: string[]
+  location?: string
+  type?: string
   link?: string
   linkLabel?: string
+  logo?: string
 }
 
-export interface WorkExperience {
+// Company grouping multiple positions
+export interface CompanyExperience {
   company: string
-  logo?: string
   link?: string
-  location: string
-  type: string
+  logo?: string
+  location?: string
+  type?: string
   positions: Position[]
 }
+
+// Alias for backward compatibility
+export interface WorkExperience extends CompanyExperience {}
 
 export interface PortfolioData {
   profile: Profile
@@ -110,11 +138,12 @@ export interface PortfolioData {
     title: string
     items: IconItem[]
   }
-  values: {
+  values?: {
     title: string
     items: ValueItem[]
   }
-  experiences: WorkExperience[]
+  // Supports both single experiences and grouped company timelines
+  experiences: Array<Experience | CompanyExperience>
   education: Education[]
   projects: Project[]
 }

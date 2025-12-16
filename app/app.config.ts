@@ -65,6 +65,6 @@ export default defineAppConfig({
     }
   } as any,
   repoUrl: "https://github.com/mahdi/mahdi-portfolio-nuxt",
-  myWebsiteUrl: "https://mahdi-portfolio.vercel.app",
-  myContactUrl: "https://www.linkedin.com/in/mahdi/",
+  myWebsiteUrl: "https://mahdiarghyani.vercel.app",
+  myContactUrl: "https://www.linkedin.com/in/mahdi-arghyani/",
 })

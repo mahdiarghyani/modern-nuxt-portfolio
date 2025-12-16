@@ -256,7 +256,7 @@ const logoSrc = computed(() => {
       arrow 
       :trailing="true" 
       placeholder="Language"
-      class="px-1 w-[64px] sm:w-[76px] rounded-full ring-1 ring-gray-200/70 dark:ring-gray-700/60 backdrop-blur-md shadow-sm h-[25px]"
+      class="px-1 w-[64px] sm:w-[78px] rounded-full ring-1 ring-gray-200/70 dark:ring-gray-700/60 backdrop-blur-md shadow-sm h-[25px]"
       :ui="{
         base: 'rounded-full',
         trailingIcon: 'text-dimmed group-data-[state=open]:rotate-180 transition-transform duration-200',

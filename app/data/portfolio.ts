@@ -3,15 +3,18 @@ import type { PortfolioData } from '@/types/portfolio.types'
 export const portfolio: PortfolioData = {
   profile: {
     name: 'Mahdi Arghyani',
-    title: 'Full-stack Developer',
+    title: 'Frontend Developer',
     location: 'Tehran, Iran',
     summary:
-      'Passionate Full-stack Developer specializing in modern web technologies. Building scalable, performant applications with focus on user experience and clean code architecture.',
-    avatar: null, // TODO: Add avatar image
+      'Frontend Developer specializing in modern web technologies. Building scalable, performant applications with focus on user experience and clean code architecture.',
+    bio: "I'm a frontend developer with a passion for creating elegant, efficient solutions to complex problems. My journey in web development has been driven by curiosity and a commitment to continuous learning. I specialize in Vue.js and Nuxt.js ecosystems, building applications that prioritize user experience, performance, and maintainability. I believe in writing clean, well-documented code and staying current with modern development practices and AI-assisted development workflows.",
+    avatar: '/img/profile.jpg',
     socials: {
       github: 'https://github.com/mahdiarghyani',
-      linkedin: 'https://linkedin.com/in/mahdi', // TODO: Update LinkedIn URL
-      email: 'mahdi@example.com', // TODO: Update email
+      linkedin: 'https://linkedin.com/in/mahdi',
+      email: 'mahdi@example.com',
+      telegram: 'https://t.me/mahdiarghyani',
+      instagram: 'https://www.instagram.com/mahdi.arghyani/',
     },
   },
 
@@ -30,57 +33,29 @@ export const portfolio: PortfolioData = {
   roles: {
     title: 'Roles',
     items: [
-      { label: 'Full-stack Developer', icon: 'i-twemoji-laptop' },
+      { label: 'Frontend Developer', icon: 'i-twemoji-laptop' },
       { label: 'Frontend Engineering', icon: 'i-twemoji-artist-palette' },
-      { label: 'Backend Development', icon: 'i-twemoji-gear' },
       { label: 'UI/UX Implementation', icon: 'i-twemoji-sparkles' },
     ],
   },
 
-  values: {
-    title: 'Values',
-    items: [
-      {
-        label: 'Clean Code',
-        icon: 'i-twemoji-sparkles',
-        description: 'Write maintainable, readable code that others can understand.',
-      },
-      {
-        label: 'Continuous Learning',
-        icon: 'i-twemoji-books',
-        description: 'Always learning new technologies and best practices.',
-      },
-      {
-        label: 'Problem Solving',
-        icon: 'i-twemoji-light-bulb',
-        description: 'Analytical approach to complex technical challenges.',
-      },
-      {
-        label: 'Team Collaboration',
-        icon: 'i-twemoji-people-holding-hands',
-        description: 'Effective communication and knowledge sharing.',
-      },
-    ],
-  },
-
   experiences: [
-    // TODO: Add work experiences
     {
-      company: 'Example Company',
+      company: 'Freelance',
       location: 'Tehran, Iran',
-      type: 'Full-time',
+      type: 'Remote',
       positions: [
         {
-          title: 'Full-stack Developer',
-          start: 'Jan 2023',
+          title: 'Frontend Developer',
+          start: 'Sep 2023',
           ongoing: true,
           description: [
             'Developing modern web applications with Vue.js and Nuxt.js',
-            'Building RESTful APIs with Node.js and Express',
-            'Implementing responsive UI with Tailwind CSS',
-            'Collaborating with cross-functional teams',
+            'Implementing responsive UI with Tailwind CSS and Nuxt UI',
+            'Building scalable component libraries and design systems',
+            'Collaborating with international clients',
           ],
-          icons: ['i-logos-vue', 'i-logos-nuxt-icon', 'i-logos-nodejs-icon', 'i-logos-tailwindcss-icon'],
+          icons: ['i-logos-vue', 'i-logos-nuxt-icon', 'i-logos-typescript-icon', 'i-logos-tailwindcss-icon'],
         },
       ],
     },
@@ -88,12 +63,12 @@ export const portfolio: PortfolioData = {
 
   education: [
     {
-      school: 'University Name',
-      degree: 'Bachelor of Science in Computer Science',
+      school: 'University of Tehran',
+      degree: 'Bachelor of Engineering in Computer Engineering',
       start: '2018',
       end: '2022',
       icons: ['i-material-symbols-school'],
-      logo: null,
+      logo: '/img/ut-logo.png',
     },
   ],
 

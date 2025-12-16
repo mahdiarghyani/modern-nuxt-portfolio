@@ -33,7 +33,8 @@ export default defineNuxtConfig({
   ],
   
   css: [
-    '~/assets/css/main.css'
+    '~/assets/css/main.css',
+    'vue3-calendar-heatmap/dist/style.css'
   ],
   
   postcss: {
@@ -87,13 +88,14 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       loadPlausible: "",
-      siteUrl: 'https://mahdi-portfolio.vercel.app'
+      siteUrl: 'https://mahdiarghyani.vercel.app',
+      githubToken: ""
     },
   },
 
   // Site configuration for sitemap
   site: {
-    url: 'https://mahdi-portfolio.vercel.app'
+    url: 'https://mahdiarghyani.vercel.app'
   } as any,
 
   // Sitemap configuration

@@ -131,6 +131,24 @@ export const aiStackItems: AiItem[] = [
     tags: ['ide', 'cursor']
   },
   {
+    id: 'ide-github-copilot',
+    name: 'GitHub Copilot',
+    category: 'assistant',
+    group: 'ide_dev',
+    icon: 'i-mdi-github',
+    shortWhy: 'AI pair programmer that suggests code completions',
+    tags: ['ide', 'copilot', 'github']
+  },
+  {
+    id: 'ide-codex',
+    name: 'Codex',
+    category: 'assistant',
+    group: 'ide_dev',
+    icon: 'i-mdi-code-braces',
+    shortWhy: 'OpenAI\'s code generation model',
+    tags: ['ide', 'openai', 'codegen']
+  },
+  {
     id: 'ide-roocode',
     name: 'RooCode',
     category: 'ide',

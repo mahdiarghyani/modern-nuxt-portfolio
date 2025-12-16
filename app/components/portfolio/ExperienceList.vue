@@ -1,9 +1,9 @@
 <template>
-  <section class="py-6">
+  <section class="section-spacing">
     <UContainer>
-      <div class="flex items-center gap-3 mb-3">
+      <div class="section-header">
         <UIcon name="i-twemoji-briefcase" class="text-2xl" />
-        <h2 class="text-lg font-semibold text-start">{{ t('sections.work') }}</h2>
+        <h2 class="section-title text-start">{{ t('sections.work') }}</h2>
       </div>
 
       <div class="space-y-6">
@@ -112,4 +112,3 @@ const companies = computed<Normalized[]>(() => {
   })
 })
 </script>
-

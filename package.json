@@ -4,6 +4,9 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "check": "pnpm -s check:i18n && pnpm -s check:data",
+    "check:data": "node scripts/check-portfolio-data.mjs",
+    "check:i18n": "node scripts/check-i18n.mjs",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -24,7 +27,9 @@
     "better-sqlite3": "^12.5.0",
     "nuxt": "^4.1.3",
     "puppeteer": "^24.31.0",
-    "puppeteer-core": "^24.31.0"
+    "puppeteer-core": "^24.31.0",
+    "tippy.js": "^6.3.7",
+    "vue3-calendar-heatmap": "^2.0.5"
   },
   "devDependencies": {
     "@csstools/postcss-color-mix-function": "^3.0.12",
@@ -46,6 +51,14 @@
   "overrides": {
     "@intlify/unplugin-vue-i18n": "11.0.1"
   },
+  "browserslist": [
+    "last 2 chrome versions",
+    "last 2 firefox versions",
+    "last 2 edge versions",
+    "safari >= 15",
+    "ios_saf >= 15",
+    "not dead"
+  ],
   "engines": {
     "node": ">=18.20.0 <23"
   },

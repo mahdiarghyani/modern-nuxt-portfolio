@@ -2,12 +2,25 @@
   "sections": {
     "about": "About Me",
     "work": "Work Experience",
+    "workAccordion": "2+ years building modern web applications.",
     "education": "Education",
-    "projects": " Projects",
+    "projects": "Projects",
     "blog": "Blog",
     "contact": "Contact",
     "skills": "Skills",
-    "softSkills": "Values & Soft Skills"
+    "mainTools": "Main tools",
+    "roles": "Roles",
+    "values": "Values",
+    "recommendations": "Recommendations",
+    "language": "Languages",
+    "softSkills": "Values & Soft Skills",
+    "githubActivity": "GitHub Activity"
+  },
+  "softSkillsAccordion": {
+    "label": "Mindset and interpersonal strengths that drive team success."
+  },
+  "aiStackAccordion": {
+    "label": "IDEs, protocols, concepts, and approaches that power my AI workflow"
   },
   "projectLabels": {
     "openSource": "Open Source"
@@ -17,7 +30,43 @@
     "proficient": "Proficient",
     "usedBefore": "Used before",
     "aiStack": "AI Stack",
-    "aiStackSubtitle": "IDEs, Protocols, Concepts, and Approaches that power my AI workflow"
+    "aiStackSubtitle": "IDEs, protocols, concepts, and approaches that power my AI workflow",
+    "aiStackGroups": {
+      "ideDev": "IDE & dev",
+      "protocols": "Protocols",
+      "concepts": "Concepts",
+      "approaches": "Approaches"
+    },
+    "aiStackFilters": {
+      "toolbarLabel": "AI Stack group filters",
+      "show": "Show AI Stack filters",
+      "hide": "Hide AI Stack filters",
+      "clear": "Clear AI Stack filters",
+      "filterBy": "Filter by {group}"
+    },
+    "aiStackTooltips": {
+      "method-bmad": "Outcome-driven orchestration with one-tool-per-step discipline",
+      "method-openspec": "Develop AI systems guided by specification before execution",
+      "concepts-hitl": "Integrate human oversight to improve outputs and control model decisions",
+      "concepts-agent-coordination": "Coordinate multiple agents to accomplish complex goals",
+      "concepts-token-budget": "Strategically manage context and token usage for LLMs",
+      "ide-vscode": "Popular, professional IDE for coding and AI projects",
+      "ide-kiro": "Intelligent editor and environment for AI software development",
+      "ide-cursor": "AI-native IDE with rules and repo-aware edits",
+      "ide-github-copilot": "AI pair programmer that suggests code completions",
+      "ide-codex": "OpenAI's code generation model",
+      "ide-roocode": "Auto-planning agents for repo-wide diffs",
+      "ide-qoder": "Team collaboration and fast AI-powered coding environment",
+      "protocols-mcp": "Model Context Protocol for multi-agent AI coordination",
+      "mcp-context7": "Retrieve up-to-date docs and examples for libraries",
+      "mcp-playwright": "Browser automation and testing via MCP-compatible server",
+      "mcp-chrome-devtools": "Control Chrome DevTools for inspection and performance via MCP",
+      "mcp-browsertools": "General browser tools MCP for automation and scraping",
+      "approaches-context-management": "Control and retain context and memory for long-running agent interactions",
+      "approaches-agent-orchestration": "Coordinate groups of agents to solve multi-step or complex tasks",
+      "approaches-cot": "Step-by-step reasoning and analysis with language models",
+      "approaches-prompt-engineering": "Craft and evaluate prompts to achieve precise, targeted model outputs"
+    }
   },
   "softSkills": {
     "problemSolving": {
@@ -75,14 +124,64 @@
     "skills": "Skills",
     "blog": "Blog",
     "contact": "Contact",
-    "theme": "Theme"
+    "theme": "Theme",
+    "languageSelector": "Language Selector"
+  },
+  "theme": {
+    "customizer": "Theme Customizer",
+    "mode": {
+      "system": "System",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "primary": {
+      "label": "Primary Color"
+    }
+  },
+  "languageSection": {
+    "tagline": "A few highlights from my language journey and learning milestones.",
+    "duolingo": {
+      "label": "Duolingo English Test",
+      "value": "Score: 85/100 (Advanced)"
+    },
+    "items": {
+      "ielts": {
+        "title": "IELTS (Academic) preparation",
+        "desc": "Focused on writing structure and speaking fluency with realistic mock tests."
+      },
+      "huawei": {
+        "title": "Huawei — English-first work environment",
+        "desc": "8+ years working daily with international stakeholders in English."
+      }
+    }
   },
   "blog": {
     "title": "Blog",
     "explore": "Stories & notes",
     "empty": "No posts yet. Check back soon!",
+    "noResults": "No results found.",
+    "allPosts": "All posts",
+    "searchPlaceholder": "Search posts…",
+    "previousPost": "Previous post",
+    "nextPost": "Next post",
+    "readingTime": "{minutes} min read",
     "readMore": "Read article",
+    "tableOfContents": "Table of contents",
+    "copyCode": "Copy code",
+    "codeCopied": "Copied",
     "backToBlog": "Back to Blog"
+  },
+  "resume": {
+    "summary": "Summary",
+    "skillsQualifications": "Skills & Qualifications",
+    "workExperience": "Work Experience",
+    "education": "Education",
+    "languagesCertifications": "Languages & Certifications",
+    "languages": "Languages",
+    "certifications": "Certifications",
+    "present": "Present",
+    "downloadPdf": "Download PDF",
+    "backToHome": "Back to Home"
   },
   "common": {
     "present": "Present",
@@ -90,7 +189,28 @@
     "goBack": "Go Back"
   },
   "meta": {
-    "portfolioTitleSuffix": "Mahdi Arghyani - Full-stack Developer"
+    "portfolioTitleSuffix": "Mahdi Arghyani - Frontend Developer"
+  },
+  "toasts": {
+    "emailCopied": {
+      "title": "Email Copied!",
+      "desc": "Email address {email} copied to clipboard"
+    },
+    "copyFailed": {
+      "title": "Copy Failed",
+      "desc": "Could not copy {email} to clipboard"
+    }
+  },
+  "portfolio": {
+    "githubActivity": {
+      "title": "GitHub Activity",
+      "subtitle": "My contribution activity over the past year",
+      "totalContributions": "{count} contributions in the last year",
+      "contributions": "contributions",
+      "less": "Less",
+      "more": "More",
+      "error": "Failed to load GitHub activity"
+    }
   },
   "error": {
     "notFoundTitle": "Page Not Found",

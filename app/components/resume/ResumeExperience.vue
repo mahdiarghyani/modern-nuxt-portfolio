@@ -8,6 +8,8 @@ interface Props {
 
 const props = defineProps<Props>()
 const { formatDate } = useResumeData()
+const { locale } = useI18n()
+const isRTL = computed(() => locale.value === 'fa')
 
 const sortedWork = computed(() => {
   return [...props.work].sort((a, b) => {
@@ -18,8 +20,9 @@ const sortedWork = computed(() => {
 })
 
 function formatDateRange(start: string, end?: string): string {
+  const { locale } = useI18n()
   const startFormatted = formatDate(start)
-  const endFormatted = end ? formatDate(end) : 'Present'
+  const endFormatted = end ? formatDate(end) : (locale.value === 'fa' ? 'حال حاضر' : 'Present')
   return `${startFormatted} - ${endFormatted}`
 }
 </script>
@@ -28,7 +31,7 @@ function formatDateRange(start: string, end?: string): string {
   <section class="mb-12 print:mb-12">
     <h2
       class="text-base font-bold text-blue-700 uppercase border-b-2 border-blue-600 pb-2 mb-6 print:mb-6 tracking-wide">
-      Work Experience
+      {{ $t('resume.workExperience') }}
     </h2>
 
     <div v-for="job in sortedWork" :key="job.company + job.startDate" class="mb-8 last:mb-0 print:mb-8">
@@ -42,9 +45,10 @@ function formatDateRange(start: string, end?: string): string {
         </span>
       </div>
       <ul class="mt-4 space-y-2.5 print:mt-4 print:space-y-2.5">
-        <li v-for="(highlight, idx) in job.highlights" :key="idx"
-          class="text-sm text-gray-700 pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-500 before:font-bold print:before:text-gray-500 break-words hyphens-none leading-relaxed"
-          v-html="parseMarkdownBold(highlight)" />
+        <li v-for="(highlight, idx) in job.highlights" :key="idx" :class="[
+          'text-sm text-gray-700 relative before:content-[\'•\'] before:absolute before:text-gray-500 before:font-bold print:before:text-gray-500 break-words hyphens-none leading-relaxed',
+          isRTL ? 'pr-4 before:right-0' : 'pl-4 before:left-0'
+        ]" v-html="parseMarkdownBold(highlight)" />
       </ul>
     </div>
   </section>
