@@ -22,7 +22,7 @@
             <template #description="{ item }">
               <ul v-if="item.descriptions?.length"
                 class="mt-2 list-disc space-y-1 text-sm text-gray-700 dark:text-gray-300 pl-5">
-                <li v-for="(desc, i) in item.descriptions" :key="i">{{ desc }}</li>
+                <li v-for="(desc, i) in item.descriptions" :key="i" v-html="parseMarkdownBold(desc)"></li>
               </ul>
               <div v-if="item.icons?.length" class="mt-3 flex flex-wrap gap-2">
                 <UIcon v-for="(icon, i) in item.icons" :key="i" :name="icon"
@@ -41,6 +41,7 @@ import { computed } from 'vue'
 import { usePortfolio } from '@/composables/usePortfolio'
 import type { TimelineItem } from '@nuxt/ui'
 import type { CompanyExperience, Experience } from '@/types/portfolio.types'
+import { parseMarkdownBold } from '~/composables/useMarkdownText'
 
 const { t } = useI18n()
 const portfolio = usePortfolio()

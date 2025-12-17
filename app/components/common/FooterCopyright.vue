@@ -2,14 +2,7 @@
   <footer class="py-10">
     <UContainer>
       <div class="flex flex-col items-center gap-4 text-center text-sm text-gray-600 dark:text-gray-400">
-        <ClientOnly>
-          <NuxtImg :src="logoSrc" alt="Mahdi Arghyani logo" width="64" height="64" class="h-12 w-12" format="png"
-            loading="lazy" />
-          <template #fallback>
-            <NuxtImg src="/favicon/android-chrome-192x192.png" alt="Mahdi Arghyani logo" width="64" height="64"
-              class="h-12 w-12" format="png" loading="lazy" />
-          </template>
-        </ClientOnly>
+        <img :src="logoSrc" alt="Mahdi Arghyani logo" width="64" height="64" class="h-12 w-12" loading="lazy" />
         <p>&copy; {{ currentYear }}, <span class="font-semibold text-gray-900 dark:text-gray-100">Mahdi Arghyani</span>
           -
           All rights reserved.</p>
@@ -31,8 +24,6 @@ const colorMode = useColorMode()
 
 const currentYear = computed(() => new Date().getFullYear())
 const logoSrc = computed(() => {
-  return colorMode.value === 'dark'
-    ? '/favicon/android-chrome-192x192-dark.png'
-    : '/favicon/android-chrome-192x192.png'
+  return colorMode.value === 'dark' ? '/favicon/logo-dark.svg' : '/favicon/android-chrome-192x192.png'
 })
 </script>

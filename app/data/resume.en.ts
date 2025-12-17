@@ -2,7 +2,7 @@
  * Resume Data - Mahdi Arghyani
  * Based on RESUME-STANDARDS.md (docs/RESUME-STANDARDS.md)
  * Optimized for ATS and 2025 best practices
- * Version: 1.0 - 2-Page Resume (International Remote Positions)
+ * Version: 1.0 - 2-Page Resume (Remote Positions)
  * 
  * ⚠️ BEFORE EDITING: Give docs/RESUME-UPDATE-RULES.md to any AI agent
  * 
@@ -42,7 +42,7 @@ export const resumeData: Resume = {
       },
     ],
     summary:
-      'Frontend Developer with **2+ years** building high-performance Vue.js/Nuxt applications for international clients. **AI-first engineer** leveraging AI-powered tools & methodologies to accelerate development by up to **2x** while maintaining code quality. Specialized in performance optimization, scalable architecture (SSR, SSG, PWA), and accessibility. Delivered **3 production applications** with focus on maintainability and clean code architecture.',
+      'Frontend Developer with **2+ years** building high-performance Vue.js/Nuxt applications for real clients. **AI-first engineer** leveraging AI-powered tools & methodologies to accelerate development by up to **2x** while maintaining code quality. Specialized in performance optimization, scalable architecture (SSR, SSG, PWA), and accessibility. Delivered **3 production applications** with focus on maintainability and clean code architecture.',
   },
 
   work: [
@@ -52,10 +52,10 @@ export const resumeData: Resume = {
       location: 'Tehran, Iran',
       startDate: '2023-09',
       highlights: [
-        'Delivered **3 production-grade** web applications for international clients using Vue.js/Nuxt.js, consistently achieving strong performance metrics and high client satisfaction',
-        'Leveraged AI development tools to reduce development time by **at least 50%** across all projects, enabling faster client delivery and **100% on-time** project completion rate',
+        'Delivered **3 production-grade** Vue.js/Nuxt.js web applications (Ideh, Insho, BaMashin) from MVP to launch for real clients',
+        'Leveraged AI development tools to reduce development time by **at least 50%** across projects, enabling faster delivery and consistent on-time completion',
         '**Ideh** - Idea evaluation platform with reusable component library reducing development time by **30%** and scalable Vue.js architecture',
-        '**Insho** - Advertising marketplace with advanced dynamic form handling (schema-based architecture), modern backend-frontend structure reducing integration time by at least 50%, and responsive UI for creator-brand matching',
+        '**Insho** - Advertising marketplace with advanced dynamic form handling (schema-based architecture), modern backend-frontend structure reducing integration time by ~40%, and responsive UI for creator-brand matching',
         '**BaMashin** - Mobility rental platform with payment integration and responsive UI optimized for mobile/desktop',
         'Led client communications, translated business requirements into technical specifications, delivered iteratively with clear documentation and transparent progress updates',
       ],
@@ -130,7 +130,6 @@ export const resumeData: Resume = {
       name: 'Quality & Accessibility',
       keywords: [
         'WCAG 2.1 Compliance',
-        'Lighthouse Optimization',
         'Code Review',
         'i18n Internationalization',
         'Responsive Design',
@@ -205,7 +204,7 @@ export const resumeData: Resume = {
         'Built with Nuxt 4 + Nuxt UI 4 + Tailwind CSS 4',
         'Bilingual support (EN/FA) with RTL',
         'Server-side PDF generation with Puppeteer',
-        'Lighthouse score 95+',
+        'Performance-focused and SEO-friendly setup',
       ],
       keywords: ['Nuxt.js', 'Vue.js', 'TypeScript', 'Tailwind CSS', 'i18n', 'PDF Generation'],
       startDate: '2025-12',

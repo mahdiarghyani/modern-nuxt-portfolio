@@ -50,10 +50,12 @@ export const portfolio: PortfolioData = {
           start: 'Sep 2023',
           ongoing: true,
           description: [
-            'Developing modern web applications with Vue.js and Nuxt.js',
-            'Implementing responsive UI with Tailwind CSS and Nuxt UI',
-            'Building scalable component libraries and design systems',
-            'Collaborating with international clients',
+            'Delivered **3 production-grade** Vue.js/Nuxt.js web applications (Ideh, Insho, BaMashin) from MVP to launch for real clients',
+            'Leveraged AI development tools to reduce development time by **at least 50%** across projects, enabling faster delivery and consistent on-time completion',
+            '**Ideh** - Idea evaluation platform with reusable component library reducing development time by **30%** and scalable Vue.js architecture',
+            '**Insho** - Advertising marketplace with advanced dynamic form handling (schema-based architecture), modern backend-frontend structure reducing integration time by ~40%, and responsive UI for creator-brand matching',
+            '**BaMashin** - Mobility rental platform with payment integration and responsive UI optimized for mobile/desktop',
+            'Led client communications, translated business requirements into technical specifications, delivered iteratively with clear documentation and transparent progress updates',
           ],
           icons: ['i-logos-vue', 'i-logos-nuxt-icon', 'i-logos-typescript-icon', 'i-logos-tailwindcss-icon'],
         },
@@ -75,21 +77,7 @@ export const portfolio: PortfolioData = {
 
 
   projects: [
-    {
-      name: 'vue-cursor-rules',
-      description:
-        'Contract-driven Cursor rules for Vue 3 + TypeScript with a focus on DX, a11y, security and production-ready outputs.',
-      links: [
-        {
-          label: 'GitHub',
-          to: 'https://github.com/aliarghyani/vue-cursor-rules',
-          icon: 'i-mdi-github',
-        },
-      ],
-      icons: ['i-logos-vue', 'i-logos-typescript-icon'],
-      status: 'Active',
-      opensource: true,
-    },
+
     {
       name: 'Ideh — Innovating Ideas Platform',
       description: 'Dynamic, scalable platform for idea evaluation and market insights.',
