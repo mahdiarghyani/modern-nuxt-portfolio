@@ -4,12 +4,12 @@
     <Hero />
 
     <!-- Below-the-fold sections rendered on server for SEO (SSR) -->
+    <WorkExperience />
+    <ProjectsList />
     <Skills />
     <AIStack />
     <SoftSkills />
     <!-- <GitHubActivity username="mahdiarghyani" /> -->
-    <WorkExperience />
-    <ProjectsList />
   </div>
 </template>
 
