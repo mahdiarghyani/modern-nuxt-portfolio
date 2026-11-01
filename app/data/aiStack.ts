@@ -170,11 +170,11 @@ export const aiStackItems: AiItem[] = [
   // Protocols & Standards (MCP)
   {
     id: 'protocols-mcp',
-    name: 'MCP (Machine Collaboration Protocol)',
+    name: 'MCP (Model Context Protocol)',
     category: 'mcp',
     group: 'protocols',
     icon: 'i-twemoji-globe-with-meridians',
-    shortWhy: 'Collaboration and coordination protocol for multi-agent AI projects',
+    shortWhy: 'Open standard for connecting AI applications to external tools and data sources',
     tags: ['mcp', 'protocol']
   },
   {
